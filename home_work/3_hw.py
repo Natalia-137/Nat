@@ -33,9 +33,11 @@ def season (s: int):
         print('весна')
     elif s > 5 and s < 9:
         print('лето')
-    else:
+    elif 9 <= s <= 11:
         print('осень')
-
+    else:
+        print('введены неверные данные')
+    
 season(10)
 
 
