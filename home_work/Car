@@ -1,0 +1,45 @@
+class Car:
+
+    def __init__(self, color = None, type = None, year = None):
+        self.color = color
+        self.type = type
+        self.year = year
+
+    def start(self):
+        print('Автомобиль заведен')
+
+    def turn_off(self):
+        print('Автомобиль заглушен')
+
+    def put_color(self):
+        if self.color == None:
+            self.color = input('Укажите цвет машины')
+        else:
+            print(f'Цвет машины {self.color}')
+
+    def put_type(self):
+        if self.type == None:
+            self.type = input('Укажите марку машины')
+        else:
+            print(f'Марка машины {self.type}')
+
+    def put_year(self):
+        if self.year == None:
+            self.year = input('Укажите год выпуска машины')
+        else:
+            print(f'Год выпуска машины {self.year}')
+
+my_auto = Car()
+father_auto = Car('silver', 'Ford', 2014)
+
+my_auto.start()
+my_auto.turn_off()
+my_auto.put_type()
+my_auto.put_year()
+my_auto.put_color()
+print('\n')
+father_auto.start()
+father_auto.turn_off()
+father_auto.put_type()
+father_auto.put_year()
+father_auto.put_color()
